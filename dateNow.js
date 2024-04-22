@@ -5,7 +5,9 @@ const day = today.getDate();
 
 // 季節を計算
 let season = "";
-
+if (month < 4) {
+  season = "春";
+}
 
 // 結果をHTMLに表示
 const seasonText = document.getElementById("date");
